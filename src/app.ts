@@ -9,3 +9,7 @@ app.get('/', (_, reply) => {
 app.get('/me', (_, reply) => {
   return reply.status(200).send({ name: 'Matheus', age: 23, project: 'Azure web app nodejs' })
 })
+
+app.get('/teste', (_, reply) => {
+  return reply.status(200).send({ message: 'Teste' })
+})
